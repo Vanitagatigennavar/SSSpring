@@ -1,0 +1,3 @@
+
+INSERT STUDENT(IDSTUDENT,`student name`,studentcourse)VALUES('23','NAYANA','BSC');
+SELECT*FROM STUDENT;
