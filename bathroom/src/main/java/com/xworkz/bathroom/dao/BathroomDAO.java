@@ -1,4 +1,4 @@
-package com.xworkz.bathroom.DAO;
+package com.xworkz.bathroom.dao;
 
 import com.xworkz.bathroom.entity.BathroomEntity;
 

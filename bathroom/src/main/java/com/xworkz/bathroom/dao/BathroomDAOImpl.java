@@ -1,14 +1,12 @@
-package com.xworkz.bathroom.DAO;
-
+package com.xworkz.bathroom.dao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
-
 import com.xworkz.bathroom.entity.BathroomEntity;
 import static com.xworkz.util.BathroomUtil.getfactory;
-public class BathroomDAOImpl implements BathroomDAO {
-	private  EntityManagerFactory factory = getFactory();
+public class BathroomDAOImpl implements BathroomDAO 
+{
+	private  EntityManagerFactory factory = getfactory();
 	public boolean save(BathroomEntity entity) {
 		try {
 //			EntityManagerFactory factory=Persistence.createEntityManagerFactory("com.xworkz");
@@ -25,9 +23,9 @@ public class BathroomDAOImpl implements BathroomDAO {
 		return true;
 	}
 	
-	}
-
 }
+
+
 
 	
 

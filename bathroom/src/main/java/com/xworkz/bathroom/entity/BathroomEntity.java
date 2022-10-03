@@ -38,8 +38,8 @@ public class BathroomEntity {
 	private LocalTime duration;
 	@Column(name="createdBy")
 	private String createdBy;
-	@Column(name="createDate")
-	private LocalDate createDate;
+	@Column(name="createdDate")
+	private LocalDate createdDate;
 	@Column(name="updateBy")
 	private String updateBy;
 	@Column(name=" updateDate")

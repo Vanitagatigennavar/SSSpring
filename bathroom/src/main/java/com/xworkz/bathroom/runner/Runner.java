@@ -3,9 +3,11 @@ package com.xworkz.bathroom.runner;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import com.xworkz.bathroom.DAO.BathroomDAO;
-import com.xworkz.bathroom.DAO.BathroomDAOImpl;
+import com.xworkz.bathroom.dao.BathroomDAO;
+import com.xworkz.bathroom.dao.BathroomDAOImpl;
 import com.xworkz.bathroom.entity.BathroomEntity;
+import com.xworkz.bathroom.service1.BathroomService;
+import com.xworkz.bathroom.service1.BathroomServiceImpl;
 
 public class Runner {
 
@@ -20,11 +22,11 @@ public class Runner {
 		entity1.setCost(4000D);
 		entity1.setDuration(LocalTime.now());
 		entity1.setCreatedBy("harish");
-		entity1.setCreateDate(LocalDate.of(2021, 8, 9));
+		entity1.setCreatedDate(LocalDate.of(2021, 8, 9));
 		entity1.setUpdateBy("radha");
 		entity1.setUpdateDate(LocalDate.of(2022, 3, 4));
 		
-		BathroomDAO dao=new BathroomDAOImpl();
+		BathroomService dao=new BathroomServiceImpl();
 		dao.save(entity1);
 		
 		

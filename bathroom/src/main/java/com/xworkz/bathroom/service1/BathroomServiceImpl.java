@@ -6,6 +6,8 @@ public class BathroomServiceImpl implements BathroomService {
 
 	public boolean save(BathroomEntity entity) {
 		
+		
+		
 		return false;
 	}
 
